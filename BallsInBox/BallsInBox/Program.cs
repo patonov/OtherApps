@@ -42,7 +42,7 @@
 
             int ballsToTakeOut = interim - 1;
 
-            Console.WriteLine($"We should take {ballsToTakeOut} balls to be sure there is only one ball in the box. One ball garantees one color left");
+            Console.WriteLine($"We should take {ballsToTakeOut} balls to be sure there is only one ball in the box. One ball guarantees one color left");
 
 
         }
