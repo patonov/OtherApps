@@ -1,0 +1,22 @@
+body{
+    margin: 0%;
+    padding: 30px;
+    background: white;
+    font-size: 100%;
+}
+
+section{
+    margin: 0%;
+    padding: auto;
+background-color: purple;
+display: inline-block;
+color: purple;
+}
+
+aside{
+    margin: 0%;
+    padding: auto;
+    background-color: white;
+    display: inline-block;
+    color: white;
+}
