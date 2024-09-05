@@ -36,11 +36,12 @@
             checkBox1 = new CheckBox();
             label3 = new Label();
             textBox3 = new TextBox();
+            progressBar1 = new ProgressBar();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(302, 307);
+            button1.Location = new Point(377, 289);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -107,11 +108,20 @@
             textBox3.TabIndex = 6;
             textBox3.Click += button1_Click;
             // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(215, 365);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(256, 39);
+            progressBar1.TabIndex = 8;
+            progressBar1.Tag = "";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(progressBar1);
             Controls.Add(label3);
             Controls.Add(textBox3);
             Controls.Add(checkBox1);
@@ -136,5 +146,6 @@
         private CheckBox checkBox1;
         private Label label3;
         private TextBox textBox3;
+        private ProgressBar progressBar1;
     }
 }

@@ -20,7 +20,10 @@ namespace WinFormsDemo
                 textBox3.Text = textBox3.Text = $"{textBox1.Text} {textBox2.Text} is not an author";
             }
 
+            progressBar1.Value += 100;
             
+            Form2 form2 = new();
+            form2.Show();
         }
 
         
