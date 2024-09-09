@@ -21,11 +21,14 @@ namespace WinFormsDemo
             }
 
             progressBar1.Value += 100;
-            
+
             Form2 form2 = new();
             form2.Show();
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

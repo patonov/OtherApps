@@ -37,6 +37,7 @@
             label3 = new Label();
             textBox3 = new TextBox();
             progressBar1 = new ProgressBar();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -116,11 +117,22 @@
             progressBar1.TabIndex = 8;
             progressBar1.Tag = "";
             // 
+            // button2
+            // 
+            button2.Location = new Point(670, 41);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 9;
+            button2.Text = "Close";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(progressBar1);
             Controls.Add(label3);
             Controls.Add(textBox3);
@@ -131,7 +143,7 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Main Form by N. Patonov";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -147,5 +159,6 @@
         private Label label3;
         private TextBox textBox3;
         private ProgressBar progressBar1;
+        private Button button2;
     }
 }

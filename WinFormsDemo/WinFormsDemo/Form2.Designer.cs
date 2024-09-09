@@ -35,6 +35,12 @@
             label2 = new Label();
             label3 = new Label();
             progressBar1 = new ProgressBar();
+            toolStrip1 = new ToolStrip();
+            toolStripProgressBar1 = new ToolStripProgressBar();
+            toolStripLabel1 = new ToolStripLabel();
+            button1 = new Button();
+            button2 = new Button();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // Yes
@@ -101,11 +107,57 @@
             progressBar1.Size = new Size(335, 29);
             progressBar1.TabIndex = 6;
             // 
+            // toolStrip1
+            // 
+            toolStrip1.Dock = DockStyle.None;
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripProgressBar1, toolStripLabel1 });
+            toolStrip1.Location = new Point(21, 396);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(210, 25);
+            toolStrip1.TabIndex = 0;
+            // 
+            // toolStripProgressBar1
+            // 
+            toolStripProgressBar1.Name = "toolStripProgressBar1";
+            toolStripProgressBar1.Size = new Size(100, 22);
+            toolStripProgressBar1.Click += toolStripProgressBar1_Click;
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.BackColor = SystemColors.ControlDarkDark;
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(95, 22);
+            toolStripLabel1.Text = "Current State";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(308, 362);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 8;
+            button1.Text = "Submit";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(694, 33);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 9;
+            button2.Text = "Close";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(toolStrip1);
             Controls.Add(progressBar1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -114,7 +166,9 @@
             Controls.Add(True);
             Controls.Add(Yes);
             Name = "Form2";
-            Text = "Form2";
+            Text = "More details to submit";
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -128,5 +182,10 @@
         private Label label2;
         private Label label3;
         private ProgressBar progressBar1;
+        private ToolStrip toolStrip1;
+        private ToolStripProgressBar toolStripProgressBar1;
+        private Button button1;
+        private ToolStripLabel toolStripLabel1;
+        private Button button2;
     }
 }

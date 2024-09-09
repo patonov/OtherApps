@@ -31,5 +31,26 @@ namespace WinFormsDemo
         {
             progressBar1.Value += 34;
         }
+
+        private void toolStripProgressBar1_Click(object sender, EventArgs e)
+        {
+            toolStripProgressBar1.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                toolStripProgressBar1.Value += 5;
+            }
+            toolStripLabel1.Text = "Working...";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
     }
 }
